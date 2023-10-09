@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+section {
+  margin-top: 40px;
+}
+/*header start*/
+.wrapper {
+  background-image: url(https://bishopgames.com/bishop-content/uploads/2014/05/NoxPillar.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 800px;
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.header-nav h1 {
+  color: #fff;
+  font-size: 24px;
+  margin: 10px;
+}
+.header-nav a {
+  color: #fff;
+  font-size: 12px;
+  margin-left: 10px;
+  position: relative;
+}
+.header-nav a::after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  height: 1px;
+  width: 20px;
+  bottom: -26px;
+  left: 50%;
+  margin-left: -10px;
+}
+.info {
+  border-left: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 20px;
+}
+.info i {
+  color: #fff;
+  margin: 5px;
+  position: relative;
+}
+.number {
+  background-color: #176b87;
+  color: #fff;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 50px;
+  font-size: 10px;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10%;
+}
+.content h1 {
+  color: #fff;
+  font-size: 50px;
+  max-width: 650px;
+}
+.content p {
+  color: #fff;
+  font-size: 14px;
+  max-width: 450px;
+}
+.content-buttons button {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  color: #fff;
+  background-color: transparent;
+  padding: 15px 30px;
+  font-size: 12px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.content-buttons .active {
+  background-color: rgb(77, 77, 223);
+  border: none;
+}
+.content-buttons .active:hover {
+  background-color: rgb(10, 10, 112);
+  transition: all 0.3s;
+}
+/*header end*/
+
+/*your-site section start*/
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.section-title p {
+  color: rgba(0, 0, 0, 0.4);
+  max-width: 500px;
+}
+.your-site-image {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 992px) {
+  .your-site-image {
+    width: 700px;
+  }
+  .your-site-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+.your-site-wrapper {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+section.your-site .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* flex-direction: column; */
+  padding: 10px;
+}
+.row i {
+  color: rgb(114, 114, 207);
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+section.your-site .row p {
+  color: rgba(0, 0, 0, 0.4);
+}
+section.your-site {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+/*your-site section end*/
+
+/*digital section start*/
+section.digital nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+section.digital nav li:hover {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
+}
+section.digital .card {
+  margin-bottom: 40px;
+}
+section.digital .card-image {
+  width: 500px;
+  height: 500px;
+  margin-top: 10px;
+}
+section.digital .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.row {
+  width: 100%;
+}
+section.digital .col-lg-6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.digital .col-lg-6 .card-image {
+  width: 100%;
+}
+section.digital .card-image:hover img {
+  transform: translateY(-50px);
+  transition: all 0.4s;
+  cursor: pointer;
+}
+section.digital .card-image {
+  overflow: hidden;
+}
+section.digital .card-wrapper .col-lg-6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 30px;
+}
+.card-wrapper .col-sm-12 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 30px;
+}
+/*digital section end*/
+
+/*flexible section start*/
+section.flexible {
+  background-color: rgba(215, 205, 205, 0.2);
+  margin-top: 10%;
+  padding: 30px;
+}
+section.flexible .row {
+  display: flex;
+}
+section.flexible .col-md-12 img {
+  max-width: 100%;
+  height: auto;
+}
+.section-about-content {
+  margin-left: 20px;
+}
+.section-about-content p {
+  color: rgba(0, 0, 0, 0.5);
+}
+section.flexible .section-about {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 15%;
+}
+/*flexible section end*/
+
+/*creative section star*/
+section.creative .image {
+  width: 330px;
+  height: 330px;
+}
+section.creative .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section.creative .col-lg-4 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.cretive .col-sm-12 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*creative section end*/
+
+/*articles section start*/
+section.artickes .image {
+  width: 200px;
+  height: 200px;
+}
+section.articles .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content-articles {
+  margin-top: 20px;
+}
+.content-articles p {
+  color: rgba(0, 0, 0, 0.5);
+}
+section.articles .col-sm-12 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/*articles section end*/
